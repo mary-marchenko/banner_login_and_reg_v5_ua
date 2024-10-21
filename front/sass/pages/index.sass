@@ -1,0 +1,92 @@
+$white: #FFF5F9
+$magenta: #FF267E
+
+$font-alumniSans-blackItalic: AlumniSans-BlackItalic, sans-serif //900
+$font-alumniSans-BoldItalic: AlumniSans-BoldItalic, sans-serif //700
+
+body
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+.wrapper
+  width: 100%
+  -webkit-tap-highlight-color: transparent
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+  position: relative
+  width: 50%
+  background: url("../img/bg.jpg") no-repeat 50% 50%/cover
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: calc(var(--vh, 1vh) * 100)
+  overflow: hidden
+  &__container
+    width: 100%
+    position: relative
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__title
+    text-align: center
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 56px
+    flex-direction: column
+    font-family: $font-alumniSans-blackItalic
+    color: $magenta
+    text-shadow: 6px 6px 0 #002
+    font-size: 4.7vw
+    letter-spacing: 1.8px
+  &__pers
+    position: absolute
+    bottom: 0
+    width: 100%
+    padding: 0 2px 0 0
+    display: flex
+    left: 50%
+    transform: translateX(-50%)
+    &-left,
+    &-center,
+    &-right
+      position: absolute
+    &-left
+      left: -10px
+      //bottom: 98px
+      bottom: 9vh
+      width: 52vh
+    &-center
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 1
+      width: 49vh
+      bottom: -120px
+    &-right
+      right: 10px
+      width: 50vh
+      bottom: 0
+  &__bottom
+    z-index: 2
+    width: 87%
+    margin: 0 auto 16%
+    &-txt
+      color: $white
+      font-family: $font-alumniSans-BoldItalic
+      text-shadow: 0 0.978px 8.239px #04D5F5, 0 0.978px 6.845px rgba(164, 255, 251, 0.61)
+      font-size: 4.28vw
+      letter-spacing: 0.82px
+      text-transform: uppercase
+      margin: 0 auto -3%
+      width: max-content
+
+
+
+
+
+
